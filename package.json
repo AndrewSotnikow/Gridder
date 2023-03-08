@@ -6,18 +6,46 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prettier": "prettier --write 'src/**/*.{tsx, ts}'",
+    "lint": "eslint src --ext .ts,.tsx,.js,.jsx --max-warnings 0 --fix && stylelint '**/*.{tsx,ts}' --max-warnings 0"
   },
   "dependencies": {
+    "formik": "^2.2.9",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router": "^6.8.1",
+    "styled-bootstrap-grid": "^3.1.2",
+    "styled-components": "^5.3.6",
+    "yup": "^1.0.0",
+    "zustand": "^4.3.3"
   },
   "devDependencies": {
     "@types/node": "^18.14.5",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
     "@vitejs/plugin-react": "^3.1.0",
+    "eslint": "^8.34.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "latest",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-styled-components-a11y": "^0.1.0",
+    "postcss": "^8.4.21",
+    "postcss-jsx": "^0.36.4",
+    "postcss-scss": "^4.0.6",
+    "prettier": "2.8.4",
+    "stylelint": "^15.1.0",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-recommended": "^10.0.1",
+    "stylelint-config-standard": "^30.0.1",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.10.0",
     "typescript": "^4.9.3",
-    "vite": "^4.1.0"
+    "vite": "^4.1.0",
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-stylelint": "^4.2.0"
   }
 }
